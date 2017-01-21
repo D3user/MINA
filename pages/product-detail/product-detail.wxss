@@ -45,8 +45,12 @@ swiper{
 .comment-name, .comment-text{
     padding-bottom: 10rpx;
 }
+
+.comment-write{
+    padding-bottom: 40rpx;
+}
+
 textarea{
-    display: block;
     text-indent: 20rpx;
     border:1rpx solid #EEEEEE;
 }

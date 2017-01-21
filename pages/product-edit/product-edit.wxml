@@ -1,0 +1,39 @@
+
+<!--product-edit.wxml-->
+<view class="container">
+    <scroll-view class="content">
+        <form class="edit-form" report-submit="true" bindsubmit="bindFormSubmit">
+            <view class="edit-header">
+                <view class="select-category">
+                    <picker mode="selector" value="{{product.category_id-1}}" range="{{cat_names}}" bindchange="bindCategoryChange">
+                        <view class="picker-text">▼ {{cat_names[product.category_id-1]}}</view>
+                    </picker>
+                </view>
+                <view class="edit-price">
+                    <input type="number" class="input-line" name="price" maxlength="{{price_max}}" value="{{product.price}}" bindblur="bindPriceBlur"></input>
+                    <picker disabled="{{!cur_enabled}}" name="currency" mode="selector" value="{{product.currency_id-1}}" range="{{cur_names}}" bindchange="bindCurrencyChange">
+                        <view class="price-text">{{cur_enabled?"▼ ":""}}{{cur_names[product.currency_id-1]}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="edit-title">
+                <input type="text" class="input-line" name="title" maxlength="{{title_max}}" placeholder="输入标题（最多{{title_max}}个字）" value="{{product.title}}" bindinput="bindTitleInput"></input>
+            </view>
+            <view class="edit-content">
+                <view class="edit-description">
+                    <textarea class="input-box" name="description" placeholder="在这里输入描述" value="{{product.description}}" bindinput="bindDescInput"></textarea>
+                </view>
+                <view class="edit-images">
+                  <block wx:for="{{product.images}}" wx:key="src">
+                      <image src="{{item}}"/>
+                  </block>
+                    <image class="add_image" bindtap="bindAddImgTap" src="../../images/addimage.png"></image>
+                </view>
+            </view>
+            <view class="button-group">
+                <button type="primary" bindtap="bindSubmitTap">提交</button>
+                <button type="warn" bindtap="bindDeleteTap">删除</button>
+            </view>
+        </form>
+    </scroll-view>
+</view>

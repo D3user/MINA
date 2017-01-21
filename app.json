@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/verify/verify",
+    "pages/product-list/product-list",
+    "pages/product-detail/product-detail",
+    "pages/product-edit/product-edit",
+    "pages/home/home"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1AAE18",
+    "navigationBarTitleText": "转换器",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/product-list/product-list",
+      "text": "物品",
+      "iconPath": "images/cart.png",
+      "selectedIconPath": "images/cart-selected.png"
+    },
+    {
+      "pagePath": "pages/home/home",
+      "text": "我的",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home-selected.png"
+    }]
+  }
+}

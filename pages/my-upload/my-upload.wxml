@@ -1,0 +1,34 @@
+
+<!--product-list.wxml-->
+<view class="container">
+  <view class="search-bar">
+      <view class="search-box">
+      <image src="../../images/search.png"></image>
+      <input placeholder="在这里搜索" bindcomfirm="bindSearchConfirm"></input>
+      </view>
+  </view>
+  <scroll-view scroll-x="true" class="category-bar">
+      <view class="category-label {{categ_all}}" bindtap="bindCatAllTap">全部</view>
+      <block wx:for="{{categories}}" wx:key="name">
+          <view class="category-label {{item.selected}}" bindtap="bindCatTap" id=
+              "{{item.id}}">{{item.name}}</view>
+      </block>
+  </scroll-view>
+  <image class="add-button" bindtap="bindAddTap" src="../../images/newpost.png"></image>
+  <scroll-view class="content">
+    <view class="list-item" wx:for="{{products}}" wx:key="id">
+      <view bindtap="bindListTap" id="{{item.id}}">
+      <view class="list-header">
+        <view class="list-title title-text">{{item.title}}</view>
+        <view class="list-price price-text">{{item.price}} HKD</view>
+      </view>  
+      <scroll-view class="list-img" scroll-x="true">
+          <block wx:for="{{item.images}}" wx:key="src">
+              <image src="{{item}}" class="slide-image" />
+          </block>
+      </scroll-view>
+      <view class="list-description">{{item.description}}</view>
+    </view>
+    </view>
+  </scroll-view>
+</view>

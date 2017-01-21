@@ -1,0 +1,61 @@
+.edit-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-category {
+    margin-left: 20rpx;
+}
+
+.edit-price {
+    margin-right: 20rpx;
+    display: flex;
+}
+
+.edit-price input { 
+    width: 100rpx;
+    height: 90%;
+}
+
+.edit-header picker {
+    padding: 10rpx;
+}
+
+.edit-title {
+    height: 70rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    margin-top: 30rpx;
+    margin-bottom: 40rpx;
+}
+
+.edit-title input {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.edit-content {
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+.edit-images {
+    white-space: normal;
+    width: 100%;
+    margin-top: 40rpx;
+    margin-bottom: 40rpx;
+    overflow: auto;
+}
+
+.edit-images image {
+    width: 200rpx;
+    height: 200rpx;
+    margin-right: 10rpx;
+}
+
+.button-group {
+    border-top: 1rpx solid #EEEEEE;
+    margin-top: 30rpx;
+}
+

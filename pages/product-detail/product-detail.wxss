@@ -1,0 +1,67 @@
+swiper{
+    height:500rpx;
+    background: #EEEEEE;
+}
+.swiper-item{
+    display: block;
+    height: 500rpx;
+    width:auto;
+}
+
+
+.product-image-single {
+    align-items: center;
+}
+
+.product-header, .product-description,.comment-unit{
+    border-bottom: 1rpx solid #EEEEEE;
+    padding: 24rpx;
+    background: white;
+}
+
+.product-header{
+    width: 100%;
+}
+
+.product-title, .product-price,  .product-description, .comment-area, .comment-unit, .comment-write{
+    display: block;
+    margin-top: 20rpx;
+}
+
+.comment-area, .comment-write{
+    padding: 24rpx;
+    background: white; 
+}
+
+
+.comment-name, .comment-time{
+    font-size: 30rpx;
+}
+
+.comment-time{
+    color: #bfbfbf;
+}
+
+.comment-name, .comment-text{
+    padding-bottom: 10rpx;
+}
+textarea{
+    display: block;
+    text-indent: 20rpx;
+    border:1rpx solid #EEEEEE;
+}
+
+.comment-post-icon{
+    background-image: url("../../images/comment-post.png");
+    width: 50rpx;
+    float:left;
+}
+
+.edit-button {
+    position: fixed;
+    bottom: 80rpx;
+    right: 40rpx;
+    width: 80rpx;
+    height: 80rpx;
+    z-index: 300;
+}

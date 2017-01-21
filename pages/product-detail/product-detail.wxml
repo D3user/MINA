@@ -1,0 +1,53 @@
+
+<!--product-detail.wxml-->
+<view>
+<image wx:if="{{product.editable}}" class="edit-button" bindtap="bindEditTap" src="../../images/editpost.png"></image>
+  <scroll-view class="content">
+  <view class="product-image-group">
+      <swiper indicator-dots="{{indicatorDots}}" class="swiper-box" id="top">
+          <block wx:for="{{product.images}}" wx:key="src">
+            <swiper-item >
+              <image src="{{item}}" class="product-image-single" />
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+<view class="meta">
+    <view class="product-header normal-text">
+      <view class="product-title">{{product.title}}</view>
+      <view class="product-price price-text">{{product.price}} HKD</view>
+    </view>
+    <view class="product-description normal-text">{{product.description}}</view>
+  <view class="comment-area normal-text">
+    <text class="normal-text">评论</text>
+  <view class="comment-unit">
+    <view class="comment-name">用户名</view> 
+    <view class="comment-text">不错啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</view>
+    <view class="comment-time">2017.1.21</view>
+   </view>
+  <view class="comment-unit">
+    <view class="comment-name">用户名</view> 
+    <view class="comment-text">不错啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</view>
+    <view class="comment-time">2017.1.21</view>
+   </view>
+  <view class="comment-unit">
+    <view class="comment-name">用户名</view> 
+    <view class="comment-text">不错啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</view>
+    <view class="comment-time">2017.1.21</view>
+   </view>
+   </view>      
+  <!--<view class="comment-unit" wx:for="{{comments}}" wx:key="id">
+      <view class="list-header">
+        <view class="comment-name">{{comment.name}}</view> 
+        <view class="comment-text">{{comment.text}}</view>
+      </view>
+   </view>-->
+  </view>
+</scroll-view>
+<view class="comment-write section">
+  <form bindsubmit="bindFormSubmit">
+    <textarea placeholder="输入评论" auto-height name="textarea"/>
+    <button class="comment-post-icon" form-type="submit"></button>
+  </form>
+</view>
+</view>

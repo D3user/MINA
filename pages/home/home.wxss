@@ -1,0 +1,48 @@
+.my-section{
+}
+
+block{     
+}
+.line{
+    height: 36rpx;
+    width:100%;
+    background-color: #F8F9FA;
+}
+
+.item-tree {
+  padding-left: 32rpx;
+  padding-top:20rpx;
+  background-color: white;
+}
+
+.my-list-text{
+  position: absolute;
+  font-weight:bold;
+  margin-top: 13rpx;
+  padding-left: 30rpx;
+}
+
+.tree_image_left{
+    width: 50rpx; 
+    height: 50rpx;
+    padding-top: 5rpx;
+
+}
+
+.tree_image_right{
+    position: absolute;
+    right: 15rpx;
+    width: 50rpx; 
+    height: 50rpx;
+}
+
+.item-tree-middle{
+    margin-top: 15rpx;
+    text-align: center;
+}
+
+.line-narrow{
+    height: 1px;
+    width:100%;
+    background-color: #eeeeee;
+}

@@ -1,0 +1,42 @@
+<view class="meta">
+<view class="my-section">
+     <block>
+          <view class="item-tree" bindtap="">
+            <image src="../../images/my-post-icon.png" class="tree_image_left"/>
+            <text class="my-list-text normal-text">我的上传</text>
+             <image src="../../images/right-arrow.png" class="tree_image_right"/>
+            </view>
+         <view  class="line-narrow" ></view> 
+         <view class="item-tree" bindtap="">
+            <image src="../../images/my-wish-icon.png" class="tree_image_left"/>
+            <text class="my-list-text normal-text">我的收藏</text>
+             <image src="../../images/right-arrow.png" class="tree_image_right"/>
+            </view>
+         <view  class="line-narrow" ></view> 
+         <view class="item-tree" bindtap="">
+            <image src="../../images/my-notice-icon.png" class="tree_image_left"/>
+            <text class="my-list-text normal-text">消息</text>
+             <image src="../../images/right-arrow.png" class="tree_image_right"/>
+            </view>
+         <view  class="line-narrow" ></view> 
+         <view class="item-tree" bindtap="">
+            <image src="../../images/my-info-icon.png" class="tree_image_left"/>
+            <text class="my-list-text normal-text">个人资料</text>
+             <image src="../../images/right-arrow.png" class="tree_image_right"/>
+            </view>
+         <view  class="line-narrow" ></view> 
+      </block>
+  </view>
+<!-- <view class="message__list">
+     <block wx:for="{{messages}}" wx:for-index="idx">
+
+          <view class="item-tree" bindtap="bindtap{{idx}}">
+            <image src="{{item.icon}}" class="tree_image_left"/>
+            <text class="groumName">{{item.groupName}}</text>
+             <image src="{{item.rightImage}}" class="tree_image_right"/>
+            </view>
+            <view  class="line" wx:if="{{idx==4}}"></view>
+         <view  class="line-narrow"wx:if="{{idx!=4}}" ></view> 
+      </block>
+  </view>-->
+</view>

@@ -1,0 +1,17 @@
+<view class="container">
+<image class="verify-logo" src="../../images/logo.jpg"></image>
+  <view class="verify-form" wx:if="{{status}}">
+    <view class="verify-tip">请输入学生证号，我们将会发送邮件到你的邮箱进行验证。非验证用户只有浏览权限。</view>
+    <input type="text" bindinput="bindSidInput" class="input-line" placeholder="e.g. 1155043210" name="sid"></input>
+    <button type="primary" bindtap="bindSendTap" loading="{{status==2}}">发送</button>
+    <button type="default" bindtap="bindSkipTap" loading="{{status==2}}">跳过</button>
+  </view>
+  <view class="result-success" wx:if="{{status == 0}}">
+    <icon type="success"></icon>
+    <text>验证邮件已成功发送到你的邮箱 {{sid}}@link.cuhk.edu.hk</text>
+  </view>
+  <view class="result-failed" wx:if="{{!status == -1}}">
+    <icon type="warn"></icon>
+    <text>验证邮件发送失败，请重试或联系客服</text>
+  </view>
+</view>
